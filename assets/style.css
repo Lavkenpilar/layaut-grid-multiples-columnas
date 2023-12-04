@@ -4,15 +4,18 @@
 .main {
     grid-area: main;
 }
+.sidebar {
+    grid-area: sidebar;
+}
 .footer {
     grid-area: footer;
 }
 .grid-container {
     display: grid;
     grid-template-areas:
-   'header'
-   'main'
-   'footer'
+   'header header'
+   'sidebar main'
+   'footer footer'
 }
 .box {
     border: solid 1px black
